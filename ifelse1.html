@@ -91,22 +91,13 @@
 
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
-    <header class="business-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="tagline">Code Your Rhythm</h1>
-                </div>
-            </div>
-        </div>
-    </header>
+   
 
     <!-- Page Content -->
     <div class="container">
         <hr>
         <h4>Select Your Rhythm...!</h4>
         <hr>
-    <div class="col-lg-12">
         <div class="col-lg-3">
             <div class="list-group">
                 <a href="#" class="list-group-item active">
@@ -121,8 +112,51 @@
         </div>
 
         <div class="col-lg-9">
+            <div class="col-lg-12">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Js</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">pseudo code</a></li>
+                    </ul>
+                </div>
+<!--                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Instrument <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+<<<<<<< HEAD
+                        <li><a href="#" data-div-id="piano">Piano</a></li>
+                        <li><a href="#">Villon</a></li>
+=======
+                        <li><a href="#">Piano</a></li>
+                        <li><a href="#">Violin</a></li>
+>>>>>>> eb9490c66d13401cf6f569730e0d335da2803cf0
+                        <li><a href="#">Drum</a></li>
+                    </ul>
+                </div>-->
+                <div class="btn btn-success" onclick="tryIt()">Play</div>
+            </div>
+
             <div class="col-lg-12 piano container" id="piano">
                 <div class="ppiano">
+<!--                    <ul>
+                        <li><div class="btn btn-default btn pkey" id="pky01">C</div></li>
+                        <li><div class="btn btn-default btn-sm pkeys" id="pky02">B</div></li>
+                        <li><div class="btn btn-default btn pkey" id="pky03">E</div></li>
+                        <li><div class="btn btn-default btn-sm pkeys" id="pky04">F</div></li>
+                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
+                        <li><div class="btn btn-default btn pkeyq" id="pky05">C</div></li>
+                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
+                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
+                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
+                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
+                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
+                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
+                    </ul>-->
                     <ul class="set">
                         <li id="60" class="white b" onclick="play('piano','C',1)">C</li>
                         <li id="61" class="black as" onclick="play('piano','C#',1)">C#</li>
@@ -139,23 +173,18 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-12">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Js</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">pseudo code</a></li>
-                    </ul>
-                </div>
-                <div class="btn btn-success" onclick="tryIt()">Play</div>
-            </div>
             <div class="col-lg-12 textfields" >
                 <div class="col-lg-6 text01" id="editor">
-var x = "All this is syntax highlighted";
-alert(x);
+var instrument="piano";
+
+    if(instrument=="piano"){
+        play("piano","C",100);
+        play("piano","D",100);
+        play("piano","E",100);
+        play("piano","G",100); 
+    }
+                
+                
                 </div>
                 <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
                 <script>
@@ -185,7 +214,6 @@ alert(x);
             </div>
 
         </div>
-    </div>
         <hr>
 
         <!-- Footer -->
