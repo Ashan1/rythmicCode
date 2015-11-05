@@ -38,6 +38,7 @@
     <script src="js/util/dom_request_xhr.js" type="text/javascript"></script>
     <script src="js/util/dom_request_script.js" type="text/javascript"></script>
     <script src="js/play.js" type="text/javascript"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
     <script>
           window.onload = function () {
     MIDI.loadPlugin({
@@ -106,6 +107,7 @@
         <hr>
         <h4>Select Your Rhythm...!</h4>
         <hr>
+    <div class="col-lg-12">
         <div class="col-lg-3">
             <div class="list-group">
                 <a href="#" class="list-group-item active">
@@ -120,51 +122,8 @@
         </div>
 
         <div class="col-lg-9">
-            <div class="col-lg-12">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Js</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">pseudo code</a></li>
-                    </ul>
-                </div>
-<!--                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Instrument <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-<<<<<<< HEAD
-                        <li><a href="#" data-div-id="piano">Piano</a></li>
-                        <li><a href="#">Villon</a></li>
-=======
-                        <li><a href="#">Piano</a></li>
-                        <li><a href="#">Violin</a></li>
->>>>>>> eb9490c66d13401cf6f569730e0d335da2803cf0
-                        <li><a href="#">Drum</a></li>
-                    </ul>
-                </div>-->
-                <div class="btn btn-success" onclick="tryIt()">Play</div>
-            </div>
-
             <div class="col-lg-12 piano container" id="piano">
                 <div class="ppiano">
-<!--                    <ul>
-                        <li><div class="btn btn-default btn pkey" id="pky01">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky02">B</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky03">E</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky04">F</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn pkeyq" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                    </ul>-->
                     <ul class="set">
                         <li class="white b"></li>
                         <li class="black as"></li>
@@ -181,39 +140,62 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-12 textfields" >
-                <div class="col-lg-6 text01" id="editor">
+            <div id="loadaction">
+                <div class="actiontext01" id="actiontext01">
+                <div class="col-lg-12">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Js</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">pseudo code</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-success" onclick="tryIt()">Play</div>
+                </div>
+                <div class="col-lg-12 textfields" >
+                    <div class="col-lg-6 text01" id="editor">
 var x = "All this is syntax highlighted";
 alert(x);
+                    </div>
+                    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+                    <script>
+                        var editor = ace.edit("editor");
+                        editor.setTheme("ace/theme/monokai");
+                        editor.getSession().setMode("ace/mode/javascript");
+                    </script>
+
+                    <div class="col-lg-6 text02" id="test"></div>
+                    <script>
+                        function tryIt(){
+                            var value = editor.getValue();
+                            document.getElementById("test").innerHTML = eval(value);
+                        }
+                    </script>
+
                 </div>
-                <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-                <script>
-                    var editor = ace.edit("editor");
-                    editor.setTheme("ace/theme/monokai");
-                    editor.getSession().setMode("ace/mode/javascript");
-                </script>
-
-                <div class="col-lg-6 text02" id="test"></div>
-                <script>
-                    function tryIt(){
-                        var value = editor.getValue();
-                        document.getElementById("test").innerHTML = eval(value);
-                    }
-                </script>
-
             </div>
-
+            </div>
+            <script>
+                function f01(){
+                    $("#loadaction").load('if02.php');
+                }
+            </script>
             <div class="col-lg-6 pagenumber">
                 <nav>
                     <ul class="pagination">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
+                        <li class="btn btn-sm btn-default" id="b01" onclick="f01()">1</li>
+                        <li class="btn btn-sm btn-default" id="b02">2</li>
+                        <li class="btn btn-sm btn-default" id="b03">3</li>
                     </ul>
                 </nav>
             </div>
 
+
         </div>
+    </div>
         <hr>
 
         <!-- Footer -->
