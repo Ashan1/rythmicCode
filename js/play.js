@@ -6,7 +6,7 @@ function wait(ms){
   }
 }
 
-function play(note,ms){
+function play(instrument,note,ms){
 
 
 			var NOTES={
@@ -25,12 +25,18 @@ function play(note,ms){
 					"B":"71"
 			};
 
+			var INSTRUMENT = {
+				"piano":0,
+				"violin":40,
+				"flute":73
+			}
+
 			var delay = 0; // play one note every quarter second
 			var notee = parseInt(NOTES[note]); // the MIDI note
 			//alert(note);
 			var velocity = 127; // how hard the note hits
 			// play the note
-
+			MIDI.programChange(0,INSTRUMENT[instrument]);
 			MIDI.setVolume(0, 100);
 			MIDI.noteOn(0, notee, velocity, delay);
 			MIDI.noteOff(0, notee, delay + 0.75);
@@ -45,45 +51,25 @@ function play(note,ms){
 function playMusic(){
 
 		
-		play("G",500);
-		play("C",500);
-		play("Eb",250);
-		play("F",250);
+		play("G",400);
+		play("C",400);
+		play("Eb",200);
+		play("F",200);
 
-		play("G",500);
-		play("C",500);
-		play("Eb",250);
-		play("F",250);
+		play("G",400);
+		play("C",400);
+		play("Eb",200);
+		play("F",200);
 
-		play("G",500);
-		play("C",500);
-		play("Eb",250);
-		play("F",250);
+		play("G",400);
+		play("C",400);
+		play("Eb",200);
+		play("F",200);
 
-		play("G",500);
-		play("C",500);
-		play("Eb",250);
-		play("F",250);
-
-		play("G",500);
-		play("C",500);
-		play("E",250);
-		play("F",250);
-
-		play("G",500);
-		play("C",500);
-		play("E",250);
-		play("F",250);
-		
-		play("G",500);
-		play("C",500);
-		play("E",250);
-		play("F",250);
-
-		play("G",500);
-		play("C",500);
-		play("E",250);
-		play("F",250);
+		play("G",400);
+		play("C",400);
+		play("Eb",200);
+		play("F",200);
 
 		
 		
