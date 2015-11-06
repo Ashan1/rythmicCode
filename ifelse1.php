@@ -141,48 +141,24 @@
                 <div class="btn btn-success" onclick="tryIt()">Play</div>
             </div>
 
-            <div class="col-lg-12 piano container" id="piano">
-                <div class="ppiano">
-<!--                    <ul>
-                        <li><div class="btn btn-default btn pkey" id="pky01">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky02">B</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky03">E</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky04">F</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn pkeyq" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                        <li><div class="btn btn-default btn-sm pkeys" id="pky06">D</div></li>
-                        <li><div class="btn btn-default btn pkey" id="pky05">C</div></li>
-                    </ul>-->
-                    <ul class="set">
-                        <li id="60" class="white b" onclick="play('piano','C',1)">C</li>
-                        <li id="61" class="black as" onclick="play('piano','C#',1)">C#</li>
-                        <li id="62" class="white a" onclick="play('piano','D',1)">D</li>
-                        <li id="63" class="black gs" onclick="play('piano','Eb',1)">Eb</li>
-                        <li id="64" class="white g" onclick="play('piano','E',1)">E</li>
-                        <li id="65" class="white f" onclick="play('piano','F',1)">F</li>
-                        <li id="66" class="black fs" onclick="play('piano','F#',1)">F#</li>
-                        <li id="67" class="white e" onclick="play('piano','G',1)">G</li>
-                        <li id="68" class="black ds" onclick="play('piano','Ab',1)">Ab</li>
-                        <li id="69" class="white d" onclick="play('piano','A',1)">A</li>
-                        <li id="70"class="black cs" onclick="play('piano','Bb',1)">Bb</li>
-                        <li id="71" class="white c" onclick="play('piano','B',1)">B</li>
-                    </ul>
-                </div>
-            </div>
+            <?php include "piano.php" ?>
+            <div id="loadaction">
             <div class="col-lg-12 textfields" >
                 <div class="col-lg-6 text01" id="editor">
 var instrument="piano";
 
+    play("piano","C");
+    play("piano","C");
+    
     if(instrument=="piano"){
-        play("piano","C",100);
-        play("piano","D",100);
-        play("piano","E",100);
-        play("piano","G",100); 
+        play("piano","G");
+        play("piano","G");
+        play("piano","G");
+        play("piano","G"); 
     }
+
+    play("piano","C");
+    play("piano","C");
                 
                 
                 </div>
@@ -193,27 +169,42 @@ var instrument="piano";
                     editor.getSession().setMode("ace/mode/javascript");
                 </script>
 
-                <div class="col-lg-6 text02" id="test"></div>
+                <div class="col-lg-6 text02" id="test">
+                    Change value of the instrument variable to a value of your choice and play the script. Did you notice any Different?
+                    <a onclick="f1()"> Next Step >></a>
+
+
+                </div>
                 <script>
                     function tryIt(){
                         var value = editor.getValue();
-                        document.getElementById("test").innerHTML = eval(value);
+                       // document.getElementById("test").innerHTML = 
+                        eval(value);
                     }
                 </script>
 
             </div>
 
-            <div class="col-lg-6 pagenumber">
-                <nav>
-                    <ul class="pagination">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                </nav>
-            </div>
+           
 
         </div>
+        </div>
+        <script>
+
+        function f1(){
+
+            $("#loadaction").load("ifelse2.php");
+
+        }
+
+        function f2(){
+            $("#loadaction").load("ifelse3.php");
+
+        }
+
+
+
+        </script>
         <hr>
 
         <!-- Footer -->

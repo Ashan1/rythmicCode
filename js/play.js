@@ -8,6 +8,9 @@ function wait(ms){
 
 function play(instrument,note,ms){
 
+if (ms === undefined) {
+          ms = 800;
+    } 
 
 			var NOTES={
 					
@@ -39,7 +42,7 @@ function play(instrument,note,ms){
 			MIDI.programChange(0,INSTRUMENT[instrument]);
 			MIDI.setVolume(0, 100);
 			MIDI.noteOn(0, notee, velocity, delay);
-			MIDI.noteOff(0, notee, delay + 0.75);
+			MIDI.noteOff(0, notee, delay + 0.25);
 			wait(ms);
 			//window.clearInterval(MyVar);
 
