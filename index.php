@@ -108,9 +108,94 @@
         <h4>Rhythmic Code - Team Excalibur</h4>
         <hr>
     <div class="col-lg-12">
+<<<<<<< HEAD
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
+=======
+        <div class="col-lg-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    Rhythms
+                </a>
+                <a href="#" class="list-group-item">If..Else..Elseif</a>
+                <a href="#" class="list-group-item">For Loop</a>
+                <a href="#" class="list-group-item">While Loop</a>
+                <a href="#" class="list-group-item">Switch Case</a>
+                <a href="#" class="list-group-item">Function</a>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+            <div class="col-lg-12 piano container" id="piano">
+                <div class="ppiano">
+                    <ul class="set">
+                        <li class="white b"></li>
+                        <li class="black as"></li>
+                        <li class="white a"></li>
+                        <li class="black gs"></li>
+                        <li class="white g"></li>
+                        <li class="black fs"></li>
+                        <li class="white f"></li>
+                        <li class="white e"></li>
+                        <li class="black ds"></li>
+                        <li class="white d"></li>
+                        <li class="black cs"></li>
+                        <li class="white c"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="loadaction">
+                <div class="actiontext01" id="actiontext01">
+                <div class="col-lg-12">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Js</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">pseudo code</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-success" onclick="tryIt()">Play</div>
+                </div>
+                <div class="col-lg-12 textfields" >
+                    <div class="col-lg-6 text01" id="editor">
+var x = "All this is syntax highlighted";
+alert(x);
+                    </div>
+                    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+                    <script>
+                        var editor = ace.edit("editor");
+                        editor.setTheme("ace/theme/monokai");
+                        editor.getSession().setMode("ace/mode/javascript");
+                    </script>
+
+                    <div class="col-lg-6 text02" id="test"></div>
+
+
+                </div>
+            </div>
+            </div>
+            <script>
+                function f01(){
+                    $("#loadaction").load('if02.php');
+                }
+            </script>
+            <div class="col-lg-6 pagenumber">
+                <nav>
+                    <ul class="pagination">
+                        <li class="btn btn-sm btn-default" id="b01" onclick="f01()">1</li>
+                        <li class="btn btn-sm btn-default" id="b02">2</li>
+                        <li class="btn btn-sm btn-default" id="b03">3</li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+>>>>>>> cdf69f8d6241794a8beb8c2d30ec3edee8862d94
     </div>
         <hr>
 
