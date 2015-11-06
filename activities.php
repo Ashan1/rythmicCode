@@ -43,7 +43,7 @@
           window.onload = function () {
     MIDI.loadPlugin({
         soundfontUrl: "./soundfont/",
-        instrument: "acoustic_grand_piano",
+        instrument: ["acoustic_grand_piano","violin","flute"],
         onprogress: function(state, progress) {
             console.log(state, progress);
         }
@@ -75,13 +75,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="activities.php">Activities</a>
+                        <a href="activities.php">Lessons</a>
+                    </li>
+                    <li>
+                        <a href="test.php">Activities</a>
                     </li>
                     <li>
                         <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -124,8 +124,80 @@
                 </div>
                 <div class="col-lg-12 textfields" >
                     <div class="col-lg-6 text01" id="editor">
-var x = "Code with music,select a lesson from left"
-alert(x);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","Eb",200);
+    play("piano","F",200);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","Eb",200);
+    play("piano","F",200);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","Eb",200);
+    play("piano","F",200);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","E",200);
+    play("piano","F",200);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","E",200);
+    play("piano","F",200);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","E",200);
+    play("piano","F",200);
+    play("piano","G",400);
+    play("piano","C",400);
+    play("piano","E",200);
+    play("piano","F",200);
+    play("piano","G",1200);
+    play("violin","G",1200);
+    play("violin","C",1200);
+    play("violin","Eb",200);
+    play("violin","F",200);
+    play("violin","G",800);
+    play("violin","C",800);
+    play("violin","Eb",200);
+    play("violin","F",200);
+    play("piano","D",400);
+    play("piano","l-G",400);
+    play("piano","l-Bb",200);
+    play("piano","C",200);
+    play("piano","D",400);
+    play("piano","l-G",400);
+    play("piano","l-Bb",200);
+    play("piano","C",200);
+    play("piano","D",400);
+    play("piano","l-G",400);
+    play("piano","l-Bb",200);
+    play("piano","C",200);
+    play("piano","D",400);
+    play("piano","l-G",400);
+    play("piano","l-Bb",200);
+    play("piano","C",200);
+    play("violin","F",1200);
+    play("violin","l-Bb",1200);
+    play("violin","Eb",200);
+    play("violin","D",200);
+    play("violin","F",800);
+    play("violin","l-Bb",800);
+    play("violin","Eb",200);
+    play("violin","D",200);
+    play("piano","C",400);
+    play("piano","l-F",400);
+    play("piano","l-Ab",200);
+    play("piano","l-Bb",200);
+    play("piano","C",400);
+    play("piano","l-F",400);
+    play("piano","l-Ab",200);
+    play("piano","l-Bb",200);
+    play("piano","C",400);
+    play("piano","l-F",400);
+    play("piano","l-Ab",200);
+    play("piano","l-Bb",200);
+    play("piano","C",400);
                     </div>
                     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
                     <script>

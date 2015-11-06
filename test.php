@@ -95,7 +95,7 @@
     <!-- Page Content -->
     <div class="container">
         <hr>
-        <h4>Select Your Rhythm...!</h4>
+        <h4>Lets test your Rhythmic skills...!</h4>
         <hr>
     <div class="col-lg-12">
         <div>
