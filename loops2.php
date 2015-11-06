@@ -16,10 +16,7 @@ while(iterations!==0){
 
     }
 
-    
 
-
-                
                 
                 </div>
                 <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
@@ -32,7 +29,7 @@ while(iterations!==0){
                 <div class="col-lg-6 text02" id="test">
                     The same previously repeated music pattern is again scripted using
                     a while loop.change the value of the iterations variable to something else and listen to the script again.
-                    <a href="loop2.html"> Next Step >></a>
+                    <a href="loop2.html"> Exercise - Loops >></a>
 
 
                 </div>

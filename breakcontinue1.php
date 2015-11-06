@@ -39,7 +39,7 @@
     <script src="js/util/dom_request_script.js" type="text/javascript"></script>
     <script src="js/play.js" type="text/javascript"></script>
     <script src="js/jquery.js" type="text/javascript"></script>
-    <script>
+     <script>
           window.onload = function () {
     MIDI.loadPlugin({
         soundfontUrl: "./soundfont/",
@@ -69,13 +69,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Rhythmic</a>
+                <a class="navbar-brand" href="#">Rhythmic</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="activities.php">Activities</a>
+                        <a href="#">Activities</a>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -90,25 +90,14 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Image Background Page Header -->
-    <!-- Note: The background image is set within the business-casual.css file. -->
-    <header class="business-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="tagline">Code Your Rhythm</h1>
-                </div>
-            </div>
-        </div>
-    </header>
+   
 
     <!-- Page Content -->
     <div class="container">
         <hr>
-        <h4>Rhythmic Code - Team Excalibur</h4>
+        <h4>Select Your Rhythm...!</h4>
         <hr>
     <div class="col-lg-12">
-
         <div class="col-lg-3">
             <div class="list-group">
                 <a href="#" class="list-group-item active">
@@ -141,8 +130,31 @@
                 </div>
                 <div class="col-lg-12 textfields" >
                     <div class="col-lg-6 text01" id="editor">
-var x = "All this is syntax highlighted";
-alert(x);
+
+var instrument="piano";
+
+play(instrument,"C");
+play(instrument,"D");
+play(instrument,"E");
+
+while(1){
+    play(instrument,"G");
+    play(instrument,"G");
+
+    if(3==3){
+        break;
+    }
+
+
+    play("violin","G");
+    play("violin","G");
+
+
+}
+
+play(instrument,"E");
+play(instrument,"D");
+play(instrument,"C");
                     </div>
                     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
                     <script>
@@ -155,15 +167,23 @@ alert(x);
                     <script>
                         function tryIt(){
                             var value = editor.getValue();
-                            document.getElementById("test").innerHTML = eval(value);
+                            //document.getElementById("test").innerHTML = 
+                            eval(value);
                         }
                     </script>
 
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+                </div>
+            </div>
+            </div>
+            <script>
+                function f01(){
+                    $("#loadaction").load('if02.php');
+                }
+            </script>
+           
 
 
+        </div>
     </div>
         <hr>
 

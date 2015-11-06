@@ -47,7 +47,7 @@ var instrument="piano";
 
                 <div class="col-lg-6 text02" id="test">
                     Change value of the instrument variable to a value of your choice and play the script. Did you notice any Different?
-                    <a href="ifelse3.html"> Next Step >></a>
+                    <!--<a href="ifelse3.html"> Next Step >></a>-->
 
 
                 </div>
@@ -61,7 +61,10 @@ var instrument="piano";
 
             </div>
 
+<<<<<<< HEAD
           
 
+=======
+>>>>>>> 4b050bb323f9e9a9a5b0d3e20e2e0bdfc7ec8fde
         </div>
     
