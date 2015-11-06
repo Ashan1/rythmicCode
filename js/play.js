@@ -87,10 +87,10 @@ function testIt(max_count,test_string){
 
 		if (data > max_count) {
 			// msg = "You have use more than 2 for loops";
-			msg = msg.concat("You have use more than ",max_count," for loops");
+			msg = msg.concat("You have used more than ",max_count," for loops");
 		}
 		else if (data < 0) {
-			msg = "You don't have use any for loop";
+			msg = "You haven't used any for loop";
 		} else {
 			outputstring = "";
 			eval(value);
