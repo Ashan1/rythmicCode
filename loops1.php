@@ -114,21 +114,7 @@
                         <li><a href="#">pseudo code</a></li>
                     </ul>
                 </div>
-<!--                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Instrument <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-<<<<<<< HEAD
-                        <li><a href="#" data-div-id="piano">Piano</a></li>
-                        <li><a href="#">Villon</a></li>
-=======
-                        <li><a href="#">Piano</a></li>
-                        <li><a href="#">Violin</a></li>
->>>>>>> eb9490c66d13401cf6f569730e0d335da2803cf0
-                        <li><a href="#">Drum</a></li>
-                    </ul>
-                </div>-->
+
                 <div class="btn btn-success" onclick="tryIt()">Play</div>
             </div>
 
@@ -175,13 +161,6 @@ var instrument="piano";
 
 
                 </div>
-                <script>
-                    function tryIt(){
-                        var value = editor.getValue();
-                       // document.getElementById("test").innerHTML = 
-                        eval(value);
-                    }
-                </script>
 
             </div>
 

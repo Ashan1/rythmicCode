@@ -84,7 +84,8 @@ function playMusic(){
 
 function tryIt(){
 	var value = editor.getValue();
-	document.getElementById("test").innerHTML = eval(value);
+	//document.getElementById("test").innerHTML = eval(value);
+	eval(value);
 }
 
 function testIt(max_count,test_string){

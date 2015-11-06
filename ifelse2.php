@@ -37,16 +37,8 @@ var instrument="piano";
 
 
                 </div>
-                <script>
-                    function tryIt(){
-                        var value = editor.getValue();
-                       // document.getElementById("test").innerHTML = 
-                        eval(value);
-                    }
-                </script>
 
             </div>
 
-       
         </div>
         
