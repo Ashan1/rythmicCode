@@ -6,6 +6,9 @@ function wait(ms){
   }
 }
 
+//this is use for testing
+var outputstring = "";
+
 function play(instrument,note,ms){
 
 if (ms === undefined) {
@@ -32,7 +35,9 @@ if (ms === undefined) {
 				"piano":0,
 				"violin":40,
 				"flute":73
-			}
+			};
+
+			outputstring = outputstring.concat(note);
 
 			var delay = 0; // play one note every quarter second
 			var notee = parseInt(NOTES[note]); // the MIDI note
@@ -74,10 +79,41 @@ function playMusic(){
 		play("Eb",200);
 		play("F",200);
 
-		
-		
-		
-		
-		
 
 }
+
+function tryIt(){
+	var value = editor.getValue();
+	document.getElementById("test").innerHTML = eval(value);
+}
+
+function testIt(max_count,test_string){
+	//var data = editor.getValue().match(/for/g).length;
+	var value = editor.getValue();
+	var match_string = value.match(/for/g);
+	var msg = "";
+	if (match_string == null ){
+		msg = "You don't have use any for loop";
+	}else {
+		var data = match_string.length;
+
+		if (data > max_count) {
+			// msg = "You have use more than 2 for loops";
+			msg = msg.concat("You have use more than ",max_count," for loops");
+		}
+		else if (data < 0) {
+			msg = "You don't have use any for loop";
+		} else {
+			outputstring = "";
+			eval(value);
+			if (outputstring == test_string){
+				msg = "You have pass the test";
+			}else{
+				msg = "Your output is wrong";
+			}
+
+		}
+	}
+	document.getElementById("test").innerText = msg;
+}
+

@@ -168,12 +168,7 @@ alert(x);
                     </script>
 
                     <div class="col-lg-6 text02" id="test"></div>
-                    <script>
-                        function tryIt(){
-                            var value = editor.getValue();
-                            document.getElementById("test").innerHTML = eval(value);
-                        }
-                    </script>
+
 
                 </div>
             </div>
