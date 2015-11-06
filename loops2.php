@@ -29,7 +29,7 @@ while(iterations!==0){
                 <div class="col-lg-6 text02" id="test">
                     The same previously repeated music pattern is again scripted using
                     a while loop.change the value of the iterations variable to something else and listen to the script again.
-                    <a href="loop2.html"> Exercise - Loops >></a>
+                    <a href="test.php"> Exercise - Loops >></a>
 
 
                 </div>

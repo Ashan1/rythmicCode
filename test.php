@@ -107,6 +107,10 @@
                 <?php include 'piano.php'; ?>
             </div>
             <div id="loadaction">
+               <div class="col-lg-9">
+                   <h5>1) Press "Rhythm" button to hear your question</h5>
+                   <div class="btn btn-warning" style="float:right">Rhythm</div>
+               </div>
                 <div class="actiontext01" id="actiontext01">
                 <div class="col-lg-12">
                     <div class="btn-group">
@@ -119,7 +123,7 @@
                             <li><a href="#">pseudo code</a></li>
                         </ul>
                     </div>
-                    <div class="btn btn-success" onclick="tryIt()">Play</div>
+                    <div class="btn btn-success" onclick="testIt()">Play</div>
                 </div>
                 <div class="col-lg-12 textfields" >
                     <div class="col-lg-6 text01" id="editor">
@@ -134,12 +138,7 @@ alert(x);
                     </script>
 
                     <div class="col-lg-6 text02" id="test"></div>
-                    <script>
-                        function tryIt(){
-                            var value = editor.getValue();
-                            document.getElementById("test").innerHTML = eval(value);
-                        }
-                    </script>
+
 
                 </div>
             </div>
