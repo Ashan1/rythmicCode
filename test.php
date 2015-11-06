@@ -125,7 +125,7 @@
                             <li><a href="#">pseudo code</a></li>
                         </ul>
                     </div>
-                    <div class="btn btn-success" onclick="testIt()">Play</div>
+                    <div class="btn btn-success" onclick="testIt(1,'G C Eb F G C Eb F G C Eb F G C Eb F ')">Play</div>
                 </div>
                 <div class="col-lg-12 textfields" >
                     <div class="col-lg-6 text01" id="editor">

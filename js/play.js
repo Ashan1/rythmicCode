@@ -16,7 +16,18 @@ if (ms === undefined) {
     } 
 
 			var NOTES={
-					
+					"l-C":"48",
+					"l-C#":"49",
+					"l-D":"50",
+					"l-Eb":"51",
+					"l-E":"52",
+					"l-F":"53",
+					"l-F#":"54",
+					"l-G":"55",
+					"l-Ab":"56",
+					"l-A":"57",
+					"l-Bb":"58",
+					"l-B":"59",
 					"C":"60",
 					"C#":"61",
 					"D":"62",
@@ -47,7 +58,7 @@ if (ms === undefined) {
 			MIDI.programChange(0,INSTRUMENT[instrument]);
 			MIDI.setVolume(0, 100);
 			MIDI.noteOn(0, notee, velocity, delay);
-			MIDI.noteOff(0, notee, delay + 0.25);
+			MIDI.noteOff(0, notee, delay + 0.75);
 			wait(ms);
 			//window.clearInterval(MyVar);
 
@@ -56,31 +67,7 @@ if (ms === undefined) {
 
 
 
-function playMusic(){
 
-		
-		play("G",400);
-		play("C",400);
-		play("Eb",200);
-		play("F",200);
-
-		play("G",400);
-		play("C",400);
-		play("Eb",200);
-		play("F",200);
-
-		play("G",400);
-		play("C",400);
-		play("Eb",200);
-		play("F",200);
-
-		play("G",400);
-		play("C",400);
-		play("Eb",200);
-		play("F",200);
-
-
-}
 
 function tryIt(){
 	var value = editor.getValue();
@@ -100,17 +87,17 @@ function testIt(max_count,test_string){
 
 		if (data > max_count) {
 			// msg = "You have use more than 2 for loops";
-			msg = msg.concat("You have use more than ",max_count," for loops");
+			msg = msg.concat("You have used more than ",max_count," for loops");
 		}
 		else if (data < 0) {
-			msg = "You don't have use any for loop";
+			msg = "You haven't used any for loop";
 		} else {
 			outputstring = "";
 			eval(value);
 			if (outputstring == test_string){
-				msg = "You have passed the test";
+				msg = "You have passed the test..";
 			}else{
-				msg = "Your output is wrong";
+				msg = msg.concat("Your output is wrong");
 			}
 
 		}
@@ -145,5 +132,53 @@ function sample_test(){
 	play("piano","F",200);
 	document.getElementById("test").innerText = outputstring;
 
+
+}
+
+function playMusic(){
+
+	 	play("piano","G",400);
+		play("piano","C",400);
+		play("piano","Eb",200);
+		play("piano","F",200);
+
+		play("piano","G",400);
+		play("piano","C",400);
+		play("piano","Eb",200);
+		play("piano","F",200);
+
+		play("piano","G",400);
+		play("piano","C",400);
+		play("piano","Eb",200);
+		play("piano","F",200);
+
+		play("piano","G",400);
+		play("piano","C",400);
+		play("piano","E",200);
+		play("piano","F",200);
+
+		play("piano","G",400);
+		play("piano","C",400);
+		play("piano","E",200);
+		play("piano","F",200);
+
+		play("piano","G",400);
+		play("piano","C",400);
+		play("piano","E",200);
+		play("piano","F",200);
+
+		play("piano","G",400);
+		play("piano","C",400);
+		play("piano","E",200);
+		play("piano","F",200);
+		play("piano","G",1200);
+
+		play("violin","G",1200);
+		play("violin","C",1200);
+		play("violin","Eb",200);
+		play("violin","F",200);
+
+		play("violin","G",800);
+		play("violin","C",800);
 
 }
