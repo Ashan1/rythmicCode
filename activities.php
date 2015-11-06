@@ -43,7 +43,7 @@
           window.onload = function () {
     MIDI.loadPlugin({
         soundfontUrl: "./soundfont/",
-        instrument: "acoustic_grand_piano",
+        instrument: ["acoustic_grand_piano","violin","flute"],
         onprogress: function(state, progress) {
             console.log(state, progress);
         }
