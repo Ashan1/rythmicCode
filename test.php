@@ -91,7 +91,6 @@
     </nav>
 
     <!-- Image Background Page Header -->
-    <!-- Note: The background image is set within the business-casual.css file. -->
 
     <!-- Page Content -->
     <div class="container">
@@ -100,7 +99,7 @@
         <hr>
     <div class="col-lg-12">
         <div>
-            <?php include 'sidemenu.php'; ?>
+            <?php include 'sidemenutest.php'; ?>
         </div>
 
         <div class="col-lg-9">

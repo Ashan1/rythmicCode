@@ -68,13 +68,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Rhythmic</a>
+                <a class="navbar-brand" href="index.php">Rhythmic</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Activities</a>
+                        <a href="activities.php">Activities</a>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -98,17 +98,8 @@
         <hr>
         <h4>Select Your Rhythm...!</h4>
         <hr>
-        <div class="col-lg-3">
-            <div class="list-group">
-                <a href="#" class="list-group-item active">
-                    Rhythms
-                </a>
-                <a href="#" class="list-group-item">If..Else..Elseif</a>
-                <a href="#" class="list-group-item">For Loop</a>
-                <a href="#" class="list-group-item">While Loop</a>
-                <a href="#" class="list-group-item">Switch Case</a>
-                <a href="#" class="list-group-item">Function</a>
-            </div>
+        <div>
+            <?php include 'sidemenu.php'; ?>
         </div>
 
         <div class="col-lg-9">

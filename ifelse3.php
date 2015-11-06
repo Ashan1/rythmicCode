@@ -47,7 +47,7 @@ var instrument="piano";
 
                 <div class="col-lg-6 text02" id="test">
                     Change value of the instrument variable to a value of your choice and play the script. Did you notice any Different?
-                    <a href="ifelse3.html"> Next Step >></a>
+                    <!--<a href="ifelse3.html"> Next Step >></a>-->
 
 
                 </div>
@@ -59,16 +59,6 @@ var instrument="piano";
                     }
                 </script>
 
-            </div>
-
-            <div class="col-lg-6 pagenumber">
-                <nav>
-                    <ul class="pagination">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                </nav>
             </div>
 
         </div>
