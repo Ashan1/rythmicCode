@@ -97,7 +97,7 @@ function testIt(max_count,test_string){
 			if (outputstring == test_string){
 				msg = "You have passed the test";
 			}else{
-				msg = "Your output is wrong";
+				msg = msg.concat("You have passed the test");
 			}
 
 		}
@@ -180,5 +180,5 @@ function playMusic(){
 
 		play("violin","G",800);
 		play("violin","C",800);
-	
+
 }
