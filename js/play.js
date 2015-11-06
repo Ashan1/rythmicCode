@@ -95,9 +95,9 @@ function testIt(max_count,test_string){
 			outputstring = "";
 			eval(value);
 			if (outputstring == test_string){
-				msg = "You have passed the test";
+				msg = "You have passed the test..";
 			}else{
-				msg = msg.concat("You have passed the test");
+				msg = msg.concat("Your output is wrong");
 			}
 
 		}
