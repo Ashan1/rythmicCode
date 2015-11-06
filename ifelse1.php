@@ -114,25 +114,16 @@
                         <li><a href="#">pseudo code</a></li>
                     </ul>
                 </div>
-<!--                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Instrument <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-<<<<<<< HEAD
-                        <li><a href="#" data-div-id="piano">Piano</a></li>
-                        <li><a href="#">Villon</a></li>
-=======
-                        <li><a href="#">Piano</a></li>
-                        <li><a href="#">Violin</a></li>
->>>>>>> eb9490c66d13401cf6f569730e0d335da2803cf0
-                        <li><a href="#">Drum</a></li>
-                    </ul>
-                </div>-->
+
                 <div class="btn btn-success" onclick="tryIt()">Play</div>
             </div>
 
-            <?php include "piano.php" ?>
+            <div class="col-lg-7">
+                <?php include "piano.php" ?>
+            </div>
+            <div class="col-lg-5">
+                <h1>if-else Statement</h1>
+            </div>
             <div id="loadaction">
             <div class="col-lg-12 textfields" >
                 <div class="col-lg-6 text01" id="editor">
@@ -166,14 +157,6 @@ var instrument="piano";
 
 
                 </div>
-                <script>
-                    function tryIt(){
-                        var value = editor.getValue();
-                       // document.getElementById("test").innerHTML = 
-                        eval(value);
-                    }
-                </script>
-
             </div>
 
            
