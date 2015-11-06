@@ -38,7 +38,7 @@
     <script src="js/util/dom_request_xhr.js" type="text/javascript"></script>
     <script src="js/util/dom_request_script.js" type="text/javascript"></script>
     <script src="js/play.js" type="text/javascript"></script>
-    <script>
+     <script>
           window.onload = function () {
     MIDI.loadPlugin({
         soundfontUrl: "./soundfont/",

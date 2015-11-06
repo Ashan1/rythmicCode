@@ -43,7 +43,7 @@
           window.onload = function () {
     MIDI.loadPlugin({
         soundfontUrl: "./soundfont/",
-        instrument: "acoustic_grand_piano",
+        instrument: ["acoustic_grand_piano","violin","flute"],
         onprogress: function(state, progress) {
             console.log(state, progress);
         }
@@ -122,24 +122,7 @@
         </div>
 
         <div class="col-lg-9">
-            <div class="col-lg-12 piano container" id="piano">
-                <div class="ppiano">
-                    <ul class="set">
-                        <li class="white b"></li>
-                        <li class="black as"></li>
-                        <li class="white a"></li>
-                        <li class="black gs"></li>
-                        <li class="white g"></li>
-                        <li class="black fs"></li>
-                        <li class="white f"></li>
-                        <li class="white e"></li>
-                        <li class="black ds"></li>
-                        <li class="white d"></li>
-                        <li class="black cs"></li>
-                        <li class="white c"></li>
-                    </ul>
-                </div>
-            </div>
+            <?php include "piano.php" ?>
             <div id="loadaction">
                 <div class="actiontext01" id="actiontext01">
                 <div class="col-lg-12">

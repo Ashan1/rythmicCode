@@ -61,15 +61,7 @@ var instrument="piano";
 
             </div>
 
-            <div class="col-lg-6 pagenumber">
-                <nav>
-                    <ul class="pagination">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
-                </nav>
-            </div>
+          
 
         </div>
     
