@@ -37,7 +37,7 @@ if (ms === undefined) {
 				"flute":73
 			};
 
-			outputstring = outputstring.concat(note);
+			outputstring = outputstring.concat(note," ");
 
 			var delay = 0; // play one note every quarter second
 			var notee = parseInt(NOTES[note]); // the MIDI note
@@ -84,7 +84,8 @@ function playMusic(){
 
 function tryIt(){
 	var value = editor.getValue();
-	document.getElementById("test").innerHTML = eval(value);
+	//document.getElementById("test").innerHTML = eval(value);
+	eval(value);
 }
 
 function testIt(max_count,test_string){
@@ -107,7 +108,7 @@ function testIt(max_count,test_string){
 			outputstring = "";
 			eval(value);
 			if (outputstring == test_string){
-				msg = "You have pass the test";
+				msg = "You have passed the test";
 			}else{
 				msg = "Your output is wrong";
 			}
@@ -117,3 +118,32 @@ function testIt(max_count,test_string){
 	document.getElementById("test").innerText = msg;
 }
 
+function sample_test(){
+	outputstring = "";
+	play("piano","G",400);
+
+	play("piano","C",400);
+
+	play("piano","Eb",200);
+
+	play("piano","F",200);
+
+
+	play("piano","G",400);
+	play("piano","C",400);
+	play("piano","Eb",200);
+	play("piano","F",200);
+
+	play("piano","G",400);
+	play("piano","C",400);
+	play("piano","Eb",200);
+	play("piano","F",200);
+
+	play("piano","G",400);
+	play("piano","C",400);
+	play("piano","Eb",200);
+	play("piano","F",200);
+	document.getElementById("test").innerText = outputstring;
+
+
+}

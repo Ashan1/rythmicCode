@@ -43,7 +43,7 @@
           window.onload = function () {
     MIDI.loadPlugin({
         soundfontUrl: "./soundfont/",
-        instrument: "acoustic_grand_piano",
+            instrument: ["acoustic_grand_piano","violin","flute"],
         onprogress: function(state, progress) {
             console.log(state, progress);
         }
@@ -109,7 +109,9 @@
             <div id="loadaction">
                <div class="col-lg-9">
                    <h5>1) Press "Rhythm" button to hear your question</h5>
-                   <div class="btn btn-warning" style="float:right">Rhythm</div>
+                   <h5>2) After the Rhythm button is pressed, the relevant notes for the melody will be displayed on the text area to the right</h5>
+                   <h5>3) To succeed, you must include at least one for loop</h5>
+                   <div class="btn btn-warning" style="float:right" onclick="sample_test()"> Rhythm </div>
                </div>
                 <div class="actiontext01" id="actiontext01">
                 <div class="col-lg-12">
@@ -127,8 +129,7 @@
                 </div>
                 <div class="col-lg-12 textfields" >
                     <div class="col-lg-6 text01" id="editor">
-var x = "Code with music,select a lesson from left"
-alert(x);
+//Enter your code here
                     </div>
                     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
                     <script>
