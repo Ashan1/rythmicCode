@@ -105,47 +105,6 @@ function testIt(max_count,test_string){
 	document.getElementById("test").innerText = msg;
 }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 function sample_test(){
 	outputstring = "";
 	play("piano","G",400);
@@ -175,8 +134,6 @@ function sample_test(){
 
 
 }
->>>>>>> e228fa217238d87ff6f9f45bd9b804913db097f5
-
 
 function playMusic(){
 
@@ -223,7 +180,5 @@ function playMusic(){
 
 		play("violin","G",800);
 		play("violin","C",800);
-
-
-
+	
 }
