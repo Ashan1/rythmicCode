@@ -1,4 +1,4 @@
-## Rhtthmic Code
+## Rhythmic Code
 
 Project done by Team Excalibur from University of Colombo School of Computing to SLIIT Codefes 2015
 
