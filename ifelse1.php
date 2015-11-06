@@ -118,7 +118,12 @@
                 <div class="btn btn-success" onclick="tryIt()">Play</div>
             </div>
 
-            <?php include "piano.php" ?>
+            <div class="col-lg-7">
+                <?php include "piano.php" ?>
+            </div>
+            <div class="col-lg-5">
+                <h1>if-else Statement</h1>
+            </div>
             <div id="loadaction">
             <div class="col-lg-12 textfields" >
                 <div class="col-lg-6 text01" id="editor">
