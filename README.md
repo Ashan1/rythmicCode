@@ -4,4 +4,4 @@ Project done by Team Excalibur from University of Colombo School of Computing to
 
 ## Short Description
 
-Teach programming to everyone using music notes. 
+This is an online teaching and learning module created based on a research paper done by the professors Roger Dannenberg, Frances Dannenberg and Philip Miller of Carnegie Mellon University - Australia. A beginner programmer can use this website to grasp the concepts of programming and try out programming in different languages.
